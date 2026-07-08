@@ -102,6 +102,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         menu.addItem(NSMenuItem(title: "Open Accessibility Settings", action: #selector(openAccessibilitySettings), keyEquivalent: ""))
         menu.addItem(NSMenuItem(title: "Reset Accessibility Permission", action: #selector(resetAccessibility), keyEquivalent: ""))
         menu.addItem(.separator())
+        menu.addItem(NSMenuItem(title: "☕ Buy Me a Coffee", action: #selector(openBuyMeACoffee), keyEquivalent: ""))
+        menu.addItem(.separator())
         menu.addItem(NSMenuItem(title: "Uninstall WinDot…", action: #selector(uninstall), keyEquivalent: ""))
         menu.addItem(.separator())
         menu.addItem(NSMenuItem(title: "Quit WinDot", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
@@ -185,6 +187,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         try? task.run()
         task.waitUntilExit()
         Accessibility.ensureTrusted()
+    }
+
+    @objc func openBuyMeACoffee() {
+        if let url = URL(string: "https://buymeacoffee.com/jackharvest") {
+            NSWorkspace.shared.open(url)
+        }
     }
 
     @objc func openConfig() {
