@@ -14,6 +14,11 @@
 
 WinDot is a free, open-source macOS menu bar app that recreates Windows' **Win+.** GIF picker. Press **⌘.** anywhere — Slack, Messages, Teams, Discord, a browser, Reddit, whatever you're typing into — and a small panel pops up right at the corner of your window, ready to search GIFs, pick an emoji, and paste it in for you.
 
+<p align="center">
+  <img src="Resources/screenshot-dark.png" width="49%" alt="WinDot's Quick tab in dark mode, docked to the corner of a Messages window, showing frequently-used emoji and recent GIFs">
+  <img src="Resources/screenshot-light.png" width="49%" alt="WinDot's Quick tab in light mode, same layout">
+</p>
+
 ## The problem
 
 macOS ships a native emoji picker (**⌃⌘Space**), but nothing for GIFs. Windows has had one built in for years (**Win+.**). Teams, Signal, and most browsers/Reddit have no built-in GIF picker on Mac at all, so you're stuck alt-tabbing to a browser tab, searching, downloading, and dragging a file in. WinDot brings the Windows-style workflow to macOS: one hotkey, search, click, done.
